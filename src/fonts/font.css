@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "CorporateALight";
+  font-style: normal;
+  font-weight: 300;
+  /* src: url("../fonts/CorporateAFont/CorporateAFont.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/CorporateAFont/CorporateAFont.ttf") format("truetype"); } */
+  src: url("fonts/CorporateAFont/CorporateALight.ttf") format("truetype");  

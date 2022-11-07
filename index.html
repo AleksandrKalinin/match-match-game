@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Match-match-game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">	
+	<link rel="stylesheet" type="text/css" href="build/css/style.css">
+	<link rel="stylesheet" type="text/css" href="src/fonts/font.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="src/libs/fontawesome/css/all.min.css">			
+	<script src="src/libs/fontawesome/js/all.min.js"></script>
+	<script src="src/libs/magnific-popup/magnific-popup.min.js"></script>
+</head>
+<body>
+	<div class="section-form" id="formSection">
+		<form id="form" class="section-form__form form">
+			<h3 class="form__title form-title">Register</h3>
+			<div class="form__block form-block">
+				<label class="form-block__label form-label">Name</label>
+				<input id="userName" required class="form-block__input form-input" type="text" name="" placeholder="Name">
+			</div>
+			<div class="form__block form-block">
+				<label class="form-block__label form-label">Lastname</label>
+				<input id="userLastname" required class="form-block__input form-input" type="text" name="" placeholder="Lastname">
+			</div>
+			<div class="form__block form-block">
+				<label class="form-block__label form-label">Email</label>
+				<input id="userMail" required class="form-block__input form-input" type="text" name="" placeholder="Email">
+			</div>						
+			<input id="formSubmit" class="form__submit form-submit" type="submit" name="">
+		</form>
+	</div>
+	<div class="time" id="timer">
+		00:00
+	</div>
+	<div class="time" id="moves">
+		0
+	</div>	
+	<section class="congrats-section" id="congratsSection">
+		<div class="congrats-block">
+			<h1 class="congrats-title">Congratulations!</h1>
+			<h2 class="congrats-subtitle">Your time is: 00:32 </h2>
+			<div class="congrats-table">
+				<table>
+					<thead>
+						<tr><th>№</th><th>Name</th><th>Lastname</th><th>Time</th><th>Difficulty</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>1</td><td>Ivan</td><td>2</td><td>3</td><td>4</td></tr>
+						<tr><td>1</td><td>1</td><td>afefafaefjhoijwho</td><td>3</td><td>4</td></tr>
+						<tr><td>1</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+						<tr><td>1</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<button id="acceptButton" class="congrats-button">Accept</button>
+		</div>		
+	</section>
+	<div class="field" id="field">
+	</div>
+	<div class="start">
+		<button id="refreshButton" class="start-button start__button">Try again</button>
+	</div>
+	<section class="difficulty-section" id="difSection">
+		<h2 class="difficulty-title">Please choose game difficulty</h2>
+		<div class="difficulty">
+			<button class="difficulty__item difficulty-item" size="4" id="dif4">Very easy(4)</button>
+			<button class="difficulty__item difficulty-item" size="16" id="dif16">Easy(16)</button>
+			<button class="difficulty__item difficulty-item" size="36" id="dif36">Normal(36)</button>
+			<button class="difficulty__item difficulty-item" size="64" id="dif64">Hard(64)</button>
+		</div>		
+	</section>
+	<div class="settings">
+		<div class="settings-item">
+			<p class="settings-item__name">Game mode: </p>
+			<div class="settings-item__options settings-options" id="#gameMode">
+				<div class="settings-options__item single-option single-option_selected">Solo</div>
+				<div class="settings-options__item single-option">Against computer</div>
+			</div>
+		</div>			
+		<div class="settings-item">
+			<p class="settings-item__name">Design: </p>
+			<div class="settings-item__options settings-options" id="#designOptions">
+				<div class="settings-options__item single-option">Blue</div>
+				<div class="settings-options__item single-option">Black</div>
+				<div class="settings-options__item single-option">Violet</div>
+				<div class="settings-options__item single-option single-option_selected">Teal</div>
+			</div>
+		</div>
+		<div class="settings-item">
+			<p class="settings-item__name">Speed: </p>
+			<div class="settings-item__options settings-options" id="#speedOptions">
+				<div class="settings-options__item single-option" val="1500">Slow</div>
+				<div class="settings-options__item single-option single-option_selected" val="1000">Normal</div>
+				<div class="settings-options__item single-option" val="500">Fast</div>
+			</div>
+		</div>		
+	</div>
+	<script src="build/js/script.js"></script>
+</body>
+</html>

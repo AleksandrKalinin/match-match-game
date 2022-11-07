@@ -1,0 +1,353 @@
+*
+	box-sizing: border-box
+
+body
+	padding: 0
+	margin: 0
+	min-height: 100vh
+	width: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	font-family: 'Open Sans', sans-serif
+	position: relative
+	overflow-x: hidden
+	background: #CB4E39
+
+.section-form
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 2
+	opacity: 1
+	display: none
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 100%
+	background: #80DADA
+	transition: .5s ease
+
+.form
+	width: 330px
+	height: 450px
+	background: #CB4E39
+	padding: 30px 40px
+	display: flex
+	flex-direction: column
+	align-items: center	
+
+.form-title
+	color: #fff
+	text-align: center
+	font-weight: 300
+	font-size: 25px	
+	letter-spacing: 2px
+	margin: 0 0 20px 0
+	text-transform: uppercase
+
+.form-block
+	margin-bottom: 16px
+
+.form-label
+	color: #fff
+	text-transform: uppercase
+	font-size: 12px
+	letter-spacing: 1px
+
+.form-input
+	margin-top: 8px
+	background: transparent
+	color: white
+	border-radius: 0
+	border: 1px solid #888
+	height: 40px
+	width: 250px
+	outline: none
+	padding: 0 6px
+
+.form-submit
+	width: 250px
+	height: 40px
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 1px
+	background: #0EC5A9 
+	border: none
+	outline: none
+	cursor: pointer
+	transition: .2s ease
+
+.form-submit:hover
+	background: #01B89C
+
+.field
+	display: grid
+	background: #CB4E39
+	grid-auto-rows: 1fr
+	grid-gap: 3px
+	padding: 3px
+	perspective: 100%
+
+.field-item
+	background: lightblue
+	height: 85px
+	width: 85px
+	cursor: pointer
+	opacity: 0
+	display: flex
+	flex-basis: 50%
+	transform-style: preserve-3d
+	background: #0EC5A9	
+	transform: rotateY(180deg)
+
+.field-item_transition
+	transition-duration: 0.5s
+
+.field-front
+	width: 100%
+	height: 100%
+	overflow: hidden
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	background: #fff
+
+.field-image
+	height: 90%
+	width: auto
+	object-fit: cover
+	object-position: center	
+	cursor: pointer
+
+.field-back
+	background: #0EC5A9	
+	cursor: pointer
+
+.field-item__rotate
+	transform: rotateY(0)
+
+.field-item:hover .field-back
+	z-index: 1
+	background: #0EC5A9	
+
+.field-front
+	backface-visibility: hidden
+	transition-delay: .3s
+	
+.difficulty-section
+	z-index: 1
+	position: absolute
+	top: 0
+	left: 0
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 100%
+	background: #CB4E39
+	transition: .5s ease 
+
+.difficulty-section_hidden
+	transform: translateX(100%)	
+
+.difficulty-title
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 2px
+	font-weight: 300
+	font-size: 44px
+
+.difficulty
+	display: flex
+	height: 100px
+	width: 760px
+	padding: 0 30px
+	background: #CB4E39
+	justify-content: space-around
+	align-items: center
+
+.difficulty-item
+	border: 1px solid #888
+	height: 50px
+	width: 160px
+	text-transform: uppercase
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	color: #fff
+	font-size: 16px
+	letter-spacing: 2px
+	font-weight: thin !important
+	transition: .2s ease
+	background: transparent
+
+.difficulty-item:hover
+	background: #fff
+	color: #CB4E39
+	cursor: pointer	
+
+.time
+	min-height: 50px
+	font-size: 40px
+	line-height: 50px
+	color: #fff
+	text-transform: uppercase
+	background: #CB4E39
+	text-align: center
+	padding: 10px 10px
+	font-weight: 300
+	letter-spacing: 2px
+
+.start
+	margin: 0 auto
+	padding: 20px 0
+
+.start-button
+	border: 1px solid #888
+	height: 50px
+	width: 150px
+	text-transform: uppercase
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	color: #fff
+	font-size: 16px
+	letter-spacing: 2px
+	font-weight: 300
+	transition: .2s ease
+	background: transparent
+	font-weight: 300
+
+.start-button:hover
+	background: #fff
+	color: #CB4E39
+	cursor: pointer			
+
+.congrats-button
+	width: 130px
+	height: 40px
+	color: #fff
+	text-transform: uppercase
+	letter-spacing: 1px
+	background: #CB4E39
+	border: none
+	outline: none
+	cursor: pointer
+	transition: .2s ease
+	margin: 0 auto
+
+.congrats-button:hover
+	background: #526289	
+
+.congrats-section
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1
+	display: flex
+	justify-content: center
+	align-items: center
+	background: rgba(51,51,51,0.8)
+	transform: translateX(-100%)
+	transition: .5s ease
+
+.congrats-block
+	background: #fff
+	padding: 40px
+	display: flex
+	flex-direction: column
+	align-items: center
+
+.congrats-table
+	margin-bottom: 16px
+
+.congrats-title, .congrats-subtitle
+	color: #CB4E39 		
+
+.congrats-title
+	margin: 0
+	font-size: 40px
+
+.congrats-subtitle
+	margin: 24px 0 24px 0
+
+table
+	border-collapse: collapse
+
+thead, thead tr, thead tr th
+	background: #CB4E39	
+
+thead tr th
+	padding: 14px 20px
+	color: #fff	
+	letter-spacing: 2px
+	font-weight: 400	
+
+tbody, tbody tr, tbody tr td
+	background: #526289
+
+
+tbody tr td
+	padding: 14px 20px
+	color: #fff	
+	letter-spacing: 2px	
+	font-weight: 400
+	transition: .1s ease
+
+tbody tr:hover td
+	background: #0EC5A9
+	cursor: pointer
+
+
+//settings
+
+.settings
+	padding: 50px 0
+	color: #ffffff	
+	width: 700px
+	.settings-item
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin: 10px 0
+		.settings-item__name
+			text-transform: uppercase
+			font-size: 18px
+			letter-spacing: 2px
+			font-weight: 300
+		.settings-options
+			display: flex
+			.single-option				
+				border: 1px solid #888
+				height: 50px
+				width: 120px
+				text-transform: uppercase
+				display: flex
+				justify-content: center
+				align-items: center
+				text-align: center
+				color: #fff
+				font-size: 13px
+				letter-spacing: 2px
+				font-weight: 300
+				transition: .2s ease
+				background: transparent
+				font-weight: 300
+				margin: 0 5px
+			.single-option:hover	
+				background: #fff
+				color: #CB4E39
+				cursor: pointer	
+			.single-option.single-option_selected
+				background: #fff
+				color: #CB4E39
+				cursor: pointer			
+		
