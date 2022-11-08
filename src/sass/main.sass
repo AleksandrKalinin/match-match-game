@@ -351,3 +351,40 @@ tbody tr:hover td
 				color: #CB4E39
 				cursor: pointer			
 		
+//players
+.players
+	display: flex
+	justify-content: space-between
+	width: 400px
+	background: transparent
+	color: #fff
+	margin-bottom: 100px
+	.players-item
+		width: 300px
+		text-align: center
+		padding: 12px
+		.players-item__title
+			text-align: center
+			color: #fff
+			font-size: 20px
+			letter-spacing: 2px
+			font-weight: 400
+			transition: .2s ease
+			background: transparent
+			font-weight: 300
+			margin: 0
+		.players-item__turn
+			text-align: center
+			color: #fff
+			font-size: 15px
+			letter-spacing: 2px
+			font-weight: 400
+			transition: .2s ease
+			background: transparent
+			font-weight: 300	
+			margin: 8px 0			
+	.players-item.players-item_active
+		background: #fff
+		color: #CB4E39
+		.players-item__title, .players-item__turn
+			color: #CB4E39		
